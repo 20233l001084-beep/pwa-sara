@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altar Digital - Día de Muertos</title>
+
+  <!-- Favicon e iconos del gato -->
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#ff6600">
+</head>
+<body>
+  <header>
+    <h1>🌼 Altar Digital de Muertos 💀</h1>
+    <button id="btnInstalar" style="display: none;">📲 Instalar App</button>
+  </header>
+
+  <main>
+    <!-- Sección 1: Datos Interesantes -->
+    <section class="seccion-datos">
+      <h2>✨ Datos Interesantes</h2>
+      <div class="grid-datos">
+        <div class="tarjeta-dato">
+          <h3>🌼 Flor de Cempasúchil</h3>
+          <p>Sus pétalos guían a las almas con su color y aroma hasta el altar.</p>
+        </div>
+        <div class="tarjeta-dato">
+          <h3>🍞 Pan de Muerto</h3>
+          <p>La bolita superior representa el cráneo y las tiras los huesos cruzados.</p>
+        </div>
+        <div class="tarjeta-dato">
+          <h3>🎭 Papel Picado</h3>
+          <p>Representa el aire. El color morado simboliza el luto y el naranja la vida.</p>
+        </div>
+        <div class="tarjeta-dato">
+          <h3>🐶 Xoloitzcuintle</h3>
+          <p>Perro sagrado que ayudaba a las almas a cruzar el río Mictlán.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección 2: Formulario para agregar al Altar -->
+    <section class="formulario-ofrenda">
+      <h2>Agregar un difunto al altar</h2>
+      <div class="campo">
+        <label for="nombreDifunto">Nombre:</label>
+        <input type="text" id="nombreDifunto" placeholder="Ej. Abuelo Pedro">
+      </div>
+      <div class="campo">
+        <label for="fraseDifunto">Frase o mensaje bonito:</label>
+        <textarea id="fraseDifunto" placeholder="Escribe un recuerdo o dedicatoria..."></textarea>
+      </div>
+      <div class="campo">
+        <label for="fotoDifunto">Foto:</label>
+        <input type="file" id="fotoDifunto" accept="image/*">
+      </div>
+      <button id="btnGuardar">Agregar a la Ofrenda</button>
+    </section>
+
+    <!-- Sección 3: Altar Guardado -->
+    <section class="seccion-altar">
+      <h2>Mi Altar</h2>
+      <div id="contenedorOfrendas" class="grid-ofrendas"></div>
+    </section>
+
+    <!-- Sección 4: Notificaciones al final de la página -->
+    <section class="panel-notificaciones">
+      <h2>🔔 Notificaciones y Recordatorios</h2>
+      <p>Activa las notificaciones para recibir avisos y datos curiosos sobre el Día de Muertos.</p>
+      <button onclick="solicitarPermisoNotificaciones()">Activar Notificaciones</button>
+      <button onclick="lanzarNotificacionDirecta()">Probar Notificación Directa</button>
+      <button onclick="lanzarNotificacionDatoCurioso()">Recibir Dato Curioso 💡</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

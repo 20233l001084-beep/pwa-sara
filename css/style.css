@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #120224;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 25px;
+  color: #ff6600;
+  text-shadow: 2px 2px 4px #000;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #1f0836;
+  border: 2px solid #ff6600;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #ffa500;
+  margin-bottom: 15px;
+}
+
+.campo {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffcc00;
+}
+
+input[type="text"], textarea, input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ff6600;
+  background-color: #2b0c4b;
+  color: #fff;
+}
+
+textarea {
+  height: 70px;
+  resize: vertical;
+}
+
+button {
+  background-color: #ff6600;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #e65c00;
+}
+
+.grid-datos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 12px;
+  text-align: left;
+}
+
+.tarjeta-dato {
+  background-color: #2b0c4b;
+  border: 1px solid #ffa500;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.tarjeta-dato h3 {
+  color: #ffcc00;
+  font-size: 0.9rem;
+  margin-bottom: 4px;
+}
+
+.tarjeta-dato p {
+  font-size: 0.8rem;
+  color: #ddd;
+  line-height: 1.2;
+}
+
+.grid-ofrendas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.tarjeta-ofrenda {
+  background-color: #2b0c4b;
+  border: 1px solid #ffa500;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.tarjeta-ofrenda img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.frase-recuerdo {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #ffeb3b;
+  margin-top: 5px;
+}
+
+.estado-pendiente {
+  color: #ffcc00;
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+.panel-notificaciones p {
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  color: #e0e0e0;
+}
